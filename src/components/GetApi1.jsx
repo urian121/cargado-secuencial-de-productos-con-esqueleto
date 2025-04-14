@@ -14,7 +14,7 @@ const GetApi = () => {
         .then((res) => res.json())
         .then((data) => {
           // Simulate progressive loading of each product
-          data.slice(0, 10).forEach((producto, index) => {
+          data.slice(0, 20).forEach((producto, index) => {
             setTimeout(() => {
               setProductos((prev) => {
                 const newProductos = [...prev];
@@ -38,19 +38,21 @@ const GetApi = () => {
   }, []);
 
   // Skeleton array to match the number of products
-  const skeletons = Array(10).fill(0);
+  const skeletons = Array(20).fill(0);
 
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Lista de Productos</h1>
+      <h1 style={{ textAlign: "center" }}>
+        Cargado Secuencial de Productos con Esqueleto en React
+      </h1>
       <div ref={containerRef} className="productos-container">
         {skeletons.map((_, index) => (
           <div key={index} className="producto">
             {!loadingProgreso[index] ? (
               // Skeleton loader
               <>
-                <Skeleton height={200} width={200} />
-                <Skeleton height={20} width={150} style={{ marginTop: 10 }} />
+                <Skeleton height={245} width={245} />
+                <Skeleton height={25} width={200} style={{ marginTop: 10 }} />
               </>
             ) : (
               // Loaded product
