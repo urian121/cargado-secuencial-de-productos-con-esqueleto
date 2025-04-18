@@ -1,10 +1,29 @@
-## Peticiones con el método fetch en ReactJS
+# 🛒 Carga Secuencial de Productos con Skeleton en React
 
-##### El proyecto "Peticiones con el método fetch en ReactJS" se enfoca en la integración de solicitudes HTTP usando fetch en aplicaciones ReactJS. Permite obtener y enviar datos de manera asíncrona, facilitando la interacción con servidores remotos para actualizar y mostrar contenido dinámico en las aplicaciones.
+Este proyecto muestra cómo implementar una **carga progresiva de productos** usando **efectos skeleton** para mejorar la experiencia del usuario mientras se cargan los datos desde una API.
 
-### Resultado final
+## 🚀 Tecnologías
 
-![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/peticion-fetch-en-react.png)
+- React
+- CSS Modules / Tailwind (ajustable según tu setup)
+- Fetch API o Axios
+- Simulación de delay con `setTimeout` (opcional)
+
+## 💡 Características
+
+- Renderizado de productos por lotes (ej. 5 a la vez).
+- Skeletons visibles mientras se cargan los datos.
+- Ideal para listas largas o cuando se quiere mejorar el **perceived performance**.
+- Código modular y fácil de escalar.
+
+## 🧪 Cómo probarlo
+
+```bash
+npm install
+npm run dev
+```
+
+![Resultado final](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/carga-secuencial-de-productos-con-skeleton-en-react.gif)
 
 ### Expresiones de Gratitud 🎁
 
